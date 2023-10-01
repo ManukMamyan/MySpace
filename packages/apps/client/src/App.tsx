@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Button from '@my-space/ui/src/components/Button'
 import './App.css'
 
 function App() {
@@ -12,7 +13,12 @@ function App() {
 
     fetchServerData()
   }, [])
-  return <div className="App">Вот тут будет жить ваше приложение :)</div>
+  return (
+    <>
+      <Button />
+      <div className="App">Вот тут будет жить ваше приложение :)</div>
+    </>
+  )
 }
 
 export default App
